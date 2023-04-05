@@ -15,3 +15,11 @@ for r in range(10): #prints 0 - 9
     
 for r in range(1,11): #prints 1 - 10
     print(r)
+
+
+#
+i = 1
+while i < 11:
+    print(i)
+    i = i + 1
+    

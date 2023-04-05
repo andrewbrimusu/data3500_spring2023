@@ -10,7 +10,7 @@ print(my_hobbies)
 json.dump(my_hobbies, open("my_hobbies.json", "w"))
 
 
-d1 = json.load(open("my_hobbies.json", "r"))
+d1 = json.load(open("my_hobbies.json", "a"))
 print(d1)
 
 

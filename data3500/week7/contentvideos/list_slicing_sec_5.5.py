@@ -1,10 +1,35 @@
 # slicing operator
 scores = [45, 39, 50, 49, 49, 44]
 
-print(scores[2:4])
-
-for i in range(2,4):
+for i in range(1,5):
     print(scores[i])
+    
+scores_sliced = scores[1:5]
+
+print(scores_sliced)
+
+    
+    
+input("press enter")
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
 # slice from beginning
 print(scores[:4])
@@ -36,3 +61,10 @@ print(name == name[::-1])
 
 def palindrome(strng):
     return strng == strng[::-1]
+    
+print(palindrome("racecar"))
+print(palindrome("racecar2"))
+print(palindrome("gohangasalamiimalasagnahog"))
+
+print(palindrome("amanaplanacanalpanama"))
+print(palindrome("ratsliveonnoevilstar"))

@@ -7,5 +7,6 @@ while age < 100:
     print("age: ", age)
     age = age + 1
 else:
-    print("you age is now 100!", age)
-    
+    print("your age is now 100!", age)
+
+print("age: ", age)

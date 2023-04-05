@@ -6,3 +6,4 @@ print("num1: ", num1)
 
 num2 = math.pow(2,5)
 print("num2: ", num2)
+

@@ -13,8 +13,18 @@ new_str = ";".join(lst)
 print("new_str: ", new_str)
 
 # join with list comprehension
-new_str = "-".join([str(i) for i in range(100)])
-print("new_str: ", new_str)
+lst = []
+for i in range(1,101):
+    lst.append(str(i))
+    
+print(lst)
+
+print(",".join(lst))
+
+str_lst = ",".join([str(i) for i in range(1,101) ])
+
+print("str_lst: ", str_lst)
+
 
 
 

@@ -1,13 +1,33 @@
 # define a function which takes a list
 def sum_all_values(lst):
+    for i in range(len(lst)):
+        lst[i] += 1
+        
     tot = 0
     for l in lst:
         tot += l
     return tot
 
 # call function
-total = sum_all_values([1,2,3,4,5])
+list_fun = [1,2,3,4,5]
+total = sum_all_values(list_fun)
 print("total: ", total)
+
+print("total: ", list_fun)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # create function that takes an int
 def changeInt(x):

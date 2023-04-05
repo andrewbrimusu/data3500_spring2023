@@ -10,6 +10,7 @@ print(name)
 name = name.capitalize()
 print(name)
 
+input("pause")
 
 
 

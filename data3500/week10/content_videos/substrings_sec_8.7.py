@@ -56,3 +56,9 @@ lyrics = "row row row your boat"
 print(lyrics.count("row"))
 print(lyrics.index("row"))
 print(lyrics.rindex("row"))
+
+idx = 0
+for i in range(lyrics.count("row")):
+    idx = lyrics.index("row", idx)
+    print(lyrics[idx:idx+len("row")], "at", idx)
+    idx += 1

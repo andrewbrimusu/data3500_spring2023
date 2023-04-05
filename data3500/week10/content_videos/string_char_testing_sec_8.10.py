@@ -19,6 +19,14 @@ print(address.isalnum())
 address = "123MainSt"
 print(address.isalnum())
 
+address = "123 Main St. Logan, Utah"
+print(address.isalnum())
+address = address.replace(" ", "")
+address = address.replace(".", "")
+address = address.replace(",", "")
+
+print(address)
+print("address: ", address.isalnum())
 
 
 

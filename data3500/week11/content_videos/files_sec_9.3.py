@@ -2,6 +2,7 @@
 file1 = open("output1.txt", "w")
 file1.write("hello\n")
 file1.write("goodbye\n")
+file1.close()
 
 # open and write to file using "with"
 with open("output2.txt", "w") as file2:

@@ -1,43 +1,35 @@
 import requests
 import json
-
+import time
     
 ticker = 'AAPL'
-url = 'http://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol='+ticker+'&outputsize=full&apikey=NG9C9EPVYBMQT0C8'
-print(url)
-request = requests.get(url)
-# print(request.text)
+url = 'http://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol='+ticker+'&outputsize=full&apikey=NG9C9EPVYBMQT0C8'
 
-rqst_dict = json.loads(request.text)
-print(rqst_dict)
-
-json.dump(rqst_dict, open(ticker+".csv", "w"))
+# http://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=AAPL&outputsize=full&apikey=NG9C9EPVYBMQT0C8
 
 
-# checkpoing activity
-# - connect to the following web json api url: https://api.datamuse.com/words?ml=duck&sp=b*&max=3
-# - download the json
-# - convert it to a Python dictionary
-# - save it to a json file permanently
+adj_closed_key = "5. adjusted close"
+time_series_key = "Time Series (Daily)"
+
+stock_txt = requests.get(url).text
+
+stock_dct = json.loads(stock_txt)
 
 
+# print(stock_dct)
+
+for day_key in stock_dct[time_series_key]:
+    print(stock_dct[time_series_key][day_key][adj_closed_key])
+    time.sleep(12)
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-# solution
-url = "https://api.datamuse.com/words?ml=duck&sp=b*&max=3"
-request = requests.get(url) # going to website to get json as a string
-dict = json.loads(request.text) # convert json to dictionary
-json.dump(dict, open("words.json", "w"))

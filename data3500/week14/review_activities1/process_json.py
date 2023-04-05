@@ -19,7 +19,7 @@ os.system("pip3 install requests")
     # {"word": "brunt", "score": 52433, "tags": ["n"]}]
 
 ticker = 'AAPL'
-url = 'http://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol='+ticker+'&outputsize=full&apikey=NG9C9EPVYBMQT0C8'
+url = 'http://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol='+ticker+'&outputsize=full&apikey=NG9C9EPVYBMQT0C8'
 req = requests.get(url)
 time.sleep(12)
 

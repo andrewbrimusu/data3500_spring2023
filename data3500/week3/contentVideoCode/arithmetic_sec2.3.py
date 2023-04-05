@@ -30,3 +30,5 @@ print("x: ", x)
 # Operator precedence: PEMDAS, left -> right if precendence is same
 x = (2 + 1) ** 2
 print("x: ", x)
+
+age = 39 + 1 + 1

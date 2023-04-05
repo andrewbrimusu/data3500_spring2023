@@ -12,8 +12,24 @@ print(3 + 5)
 # variable assignment
 age = 39
 
+val = 2 
+for i in range(1, 1000000):
+    val = val ** i
+    print(val)
+    input()
+
+
+
+
+
+
+
+
+
+
 # variable results from expression
 num1 = 3 + 5
+
 print("num1: ", num1)
 # variable created from other variables
 x = 3
@@ -26,7 +42,11 @@ print("z: ", z)
 
 # variable names
 _var1 = 10
-i_love_variables10 = 3.1415
+i_love_variables_10 = 3.1415
+
+iLoveVariables10 = 3.1415
+
+camelCase
 
 # types
 print(type(age))

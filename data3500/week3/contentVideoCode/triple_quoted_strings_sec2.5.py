@@ -2,7 +2,7 @@
 # you can include double quotes inside single quote strings
 print('Display "hi" in quotes')
 print("Display \"hi\" in quotes")
-print("Display \'hi\' in quotes")
+print("Display 'hi' in quotes")
 
 # triple line string
 story = """Hi this is my string.

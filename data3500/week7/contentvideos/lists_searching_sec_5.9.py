@@ -6,6 +6,6 @@ print(favorite_colors.index("green"))
 # create a list, with 5 names in it
 # one of the names should be your name
 # use the index function to search the list for your name
-names = ["leo", "fay", "ziggy", "anna", "andy"]
+names = ["leo", "fay", "ziggy", "anna", "andy", "andy"]
 name_idx = names.index("andy")
 print("name_idx: ", name_idx)

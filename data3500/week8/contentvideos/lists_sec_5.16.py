@@ -1,20 +1,30 @@
 #2d lists
 
+num1 = 3
+num2 = 4
 # multiplication table
 tab = []
-for i in range(10):
+for i in range(num1):
     tab.append([])
     
-for i in range(10):
-    for j in range(10):
-        tab[i].append(i * j)
+for i in range(1, num1+1):
+    for j in range(1, num2+1):
+        tab[i-1].append(i * j)
         
 
 print("tab: ", tab, "\n")
 
+
+
+
 for row in tab:
     print(row)
     
+
+
+input("press enter")
+
+
 for i in range(10):
     for j in range(10):
         print(tab[i][j], end=" ")

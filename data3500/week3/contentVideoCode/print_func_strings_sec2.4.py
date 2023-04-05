@@ -18,3 +18,6 @@ print("sum of 3 and 5: ", 3+5)
 first_name = "andy"
 last_name = 'brim'
 print("my name is: ", first_name, last_name)
+
+print("my name is: " + first_name + last_name)
+

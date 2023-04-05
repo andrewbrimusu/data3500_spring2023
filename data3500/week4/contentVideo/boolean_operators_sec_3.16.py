@@ -48,6 +48,7 @@ print(False and False) # False
 age = 39
 parent_permission = False # because I dont need permission
 can_you_fly = age > 14 or (age <= 14 and parent_permission)
+
 print("can_you_fly: ", can_you_fly)
 
 age = 12

@@ -9,3 +9,8 @@ print("mx: ", mx)
 # range
 r = range(10)
 print("r: ", r)
+
+for i in range(0, -10, -1):
+    print(i)
+    
+    

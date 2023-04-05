@@ -6,6 +6,9 @@ else:
     print("Glad you're doing well!")
     
 
+
+
+
 # if elif else
 num_grade = 95
 if num_grade >= 90:
@@ -23,13 +26,15 @@ else:
 bozo_bucket = eval(input("What is the highest bucket you got to?"))
 if bozo_bucket >= 1:
     print("you win a candy bar")
-if bozo_bucket >= 2:
+elif bozo_bucket >= 2:
     print("you win a card game")
-if bozo_bucket >= 3:
+elif bozo_bucket >= 3:
     print("you win a toy doll")
-if bozo_bucket >= 4:
+elif bozo_bucket >= 4:
     print("you win a kite")
-if bozo_bucket >=5:
+elif bozo_bucket >=5:
     print("you win a bicycle")
-if bozo_bucket >= 6:
+elif bozo_bucket >= 6:
     print("you win a 50 dollar bill!!!!")
+else:
+    print("sorry")
